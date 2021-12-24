@@ -10,7 +10,7 @@ import {
 import Home from './pages/home';
 import Customer from './pages/customer';
 import page from './page';
-import { GlobalContext } from './context';
+import { GlobalContext, GlobalNoticeContext } from './context';
 import navbarProps from './utils/navbarProps';
 import { goPath, i18nRedirect } from './utils/i18n';
 import UserNavbarBorderStyle from './hooks/useNavbarBorderStyle';
@@ -18,6 +18,7 @@ import { EventMap } from './pages/home/utils/eventMap';
 
 export default function App() {
   const { lang, theme, toggleTheme, user } = useContext(GlobalContext);
+  const { setNoticeHeight } = useContext(GlobalNoticeContext);
   const history = useHistory();
   const isHome = history.location.pathname === '/';
   const pathRef = useRef(history.location.pathname);
@@ -86,6 +87,7 @@ export default function App() {
         user={user}
         {...navbarProps}
       />
+      <Navbar.GlobalNotice onHeightChange={setNoticeHeight} />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/en-US" exact component={Home} />
