@@ -225,10 +225,10 @@
   dependencies:
     classnames "^2.2.6"
 
-"@arco-design/arco-site-navbar@^1.10.17":
-  version "1.10.17"
-  resolved "https://registry.npmjs.org/@arco-design/arco-site-navbar/-/arco-site-navbar-1.10.17.tgz#e2352d700e5d6adb2744c772fa4ae3464843b3f5"
-  integrity sha512-A9nYYVQmsZqZ6WMuqWkxxHbU/BA4zomORejHp18wEsdOuA1QVpfLXrzVUuLHTF4taRz7PhShMDD7my+WGZolYA==
+"@arco-design/arco-site-navbar@^1.12.0":
+  version "1.12.0"
+  resolved "http://bnpm.byted.org/@arco-design/arco-site-navbar/-/arco-site-navbar-1.12.0.tgz#020d49729076a574d50024ce667699dc5fd2c6b8"
+  integrity sha512-O/3Y4ptbOYEuECLpOMST6y2oCUZHNrt/OVotwDCJw6LqfnxOFvejMJ5CGCsoMInjobNHFjxlRsRt4yO5ESflVA==
   dependencies:
     "@antv/g2" "^4.1.12"
     "@arco-design/arco-site-utils" "^1.0.1"
